@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/thomasfuchs/Projects/zepto'
+let g:netrw_dirhist_2='/Users/thomasfuchs/Projects'
+let g:netrw_dirhist_3='/Users/thomasfuchs'
+let g:netrw_dirhist_4='/Users'
+let g:netrw_dirhist_5='/Users/thomasfuchs/Projects/zepto'
+let g:netrw_dirhist_6='/Users/thomasfuchs/Projects/zepto/test'
+let g:netrw_dirhist_7='/Users/thomasfuchs/Projects/zepto'
+let g:netrw_dirhist_8='/Users/thomasfuchs/Projects/beatcancereverywhere.com'
