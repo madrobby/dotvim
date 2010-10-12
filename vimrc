@@ -62,6 +62,7 @@ map <leader>tp :tabprevious<cr>
 map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
+map <leader>d :NERDTreeToggle<cr>
 
 " Uncomment to use Jamis Buck's file opening plugin
 " map <Leader>f :FuzzyFinderTextMate<Enter>
@@ -82,3 +83,6 @@ autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
 let g:bufExplorerShowRelativePath=1
 
+autocmd VimEnter * silent! Gcd
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd w
