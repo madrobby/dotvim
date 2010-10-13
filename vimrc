@@ -5,6 +5,7 @@ set nocompatible                  " Must come first because it changes other opt
 
 silent! call pathogen#runtime_append_all_bundles()
 
+set t_Co=256
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
@@ -12,6 +13,11 @@ runtime macros/matchit.vim        " Load the matchit plugin.
 
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
+set cursorline
+
+set encoding=utf-8 nobomb
+
+set magic " extended regexes
 
 set backspace=indent,eol,start    " Intuitive backspacing.
 
@@ -25,6 +31,10 @@ set smartcase                     " But case-sensitive if expression contains a 
 
 set number                        " Show line numbers.
 set ruler                         " Show cursor position.
+
+set scrolloff=3
+set shortmess=I
+set showmode
 
 set incsearch                     " Highlight matches as you type.
 set hlsearch                      " Highlight matches.
@@ -50,7 +60,7 @@ set laststatus=2                  " Show the status line all the time
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
 " Or use vividchalk
-colorscheme vividchalk 
+colorscheme molokai 
 
 " Tab mappings.
 map <leader>tt :tabnew<cr>
