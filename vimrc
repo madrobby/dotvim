@@ -102,6 +102,6 @@ autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
 let g:bufExplorerShowRelativePath=1
 
-autocmd VimEnter * silent! Gcd
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd w
+"autocmd VimEnter * silent! Gcd
+"autocmd VimEnter * NERDTree
+"autocmd VimEnter * wincmd w
