@@ -120,3 +120,6 @@ inoremap <Up> <C-o>gk
 if has("gui_macvim")
     let macvim_hig_shift_movement = 1
 endif
+
+"highlight underscore jst templates
+au BufRead,BufNewFile *.jst set filetype=jst
